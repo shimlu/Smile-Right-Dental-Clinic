@@ -92,8 +92,8 @@ export default function Home({ setPage }) {
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-dark/90 via-brand-dark/50 to-transparent p-6 text-white">
                   <div className="flex items-center gap-3">
-                    <div className="w-11 h-11 rounded-xl bg-brand-dark border border-brand-gold/40 p-1 shrink-0 overflow-hidden">
-                      <img src={clinic.logo} alt={`${clinic.name} logo`} className="w-full h-full object-contain rounded-lg" />
+                    <div className="w-11 h-11 rounded-xl shrink-0 overflow-hidden shadow-sm">
+                      <img src={clinic.logo} alt={`${clinic.name} logo`} className="w-full h-full object-cover" />
                     </div>
                     <div>
                       <p className="font-bold text-sm leading-tight">{clinic.addressLine1}</p>
@@ -135,8 +135,8 @@ export default function Home({ setPage }) {
                   alt={`${clinic.name} Clinical Team`}
                   className="w-full h-[450px] object-cover rounded-2xl filter brightness-95"
                 />
-                <div className="absolute top-6 left-6 w-14 h-14 rounded-2xl bg-brand-dark border border-brand-gold/50 p-1.5 shadow-xl">
-                  <img src={clinic.logo} alt={`${clinic.name} logo`} className="w-full h-full object-contain" />
+                <div className="absolute top-6 left-6 w-14 h-14 rounded-2xl overflow-hidden shadow-xl">
+                  <img src={clinic.logo} alt={`${clinic.name} logo`} className="w-full h-full object-cover" />
                 </div>
                 <div className="absolute bottom-8 left-8 right-8 bg-brand-dark/95 backdrop-blur-md rounded-2xl p-4 text-white border border-brand-gold/30 shadow-lg">
                   <p className="text-lg font-bold">{clinic.name} {clinic.suffix}</p>

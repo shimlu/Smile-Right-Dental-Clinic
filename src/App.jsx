@@ -67,11 +67,11 @@ function AppShell({ clinic }) {
   }, [page]);
 
   const BrandLogo = ({ size = "w-11 h-11" }) => (
-    <div className={`${size} rounded-xl bg-brand-dark border border-brand-gold/30 p-1 flex items-center justify-center overflow-hidden shadow-sm shrink-0`}>
+    <div className={`${size} rounded-xl overflow-hidden shadow-sm shrink-0`}>
       <img
         src={clinic.logo}
         alt={`${clinic.name} ${clinic.suffix} Logo`}
-        className="w-full h-full object-contain"
+        className="w-full h-full object-cover"
       />
     </div>
   );
